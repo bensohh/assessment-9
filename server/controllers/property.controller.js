@@ -113,7 +113,7 @@ module.exports = {
         try{
             const result = await Property.update({ slug: req.params.propertySlug }, { status: req.body.status });
             console.log({result});
-            if(result && result.nModified == 1) res.status(200).json({ result, message: "Property has been updated Successfully" });
+            if(result && (result.modifiedCount === 1 || result.nModified === 1)) res.status(200).json({ result, message: "Property has been updated Successfully" });
             else throw new Error('Error in updating property');
         }
         catch(err){
