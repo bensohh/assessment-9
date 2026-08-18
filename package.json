@@ -44,6 +44,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-share": "^5.2.2",
+    "react-toastify": "^11.1.0",
     "reactstrap": "^9.1.1",
     "socket.io": "^4.8.1",
     "socket.io-client": "^4.5.4",
